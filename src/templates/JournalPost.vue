@@ -21,7 +21,7 @@
           </div>          
         </div>
 
-        <JournalContent :content="$page.post.content" />
+        <JournalContent :content="renderMd($page.post.content)" />
 
       </div>
     </div>
@@ -39,6 +39,7 @@ query($id: ID!){
 
 <script>
 import JournalContent from "@/components/JournalContent"
+import MarkdownIt from "markdown-it";
 
 export default {
   components: {
@@ -47,6 +48,12 @@ export default {
   metaInfo () {
     return {
       title: this.$page.post.title
+    }
+  },
+  methods:{
+    renderMd(content){
+      const md = new MarkdownIt();
+      return md.render(content)
     }
   }
 }

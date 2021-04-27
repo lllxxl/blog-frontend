@@ -11,9 +11,9 @@ module.exports = {
     {
       use: '@gridsome/source-strapi',
       options: {
-        apiURL: process.env.GRIDSOME_API_URL,
+        apiURL: 'http://106.75.108.252:1337',
         queryLimit: 1000, // Defaults to 100
-        contentTypes: ['post', 'tag', 'project', 'journal'],
+        contentTypes: ['project', 'journal'],
         singleTypes: ['theme'],
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
