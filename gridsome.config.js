@@ -25,14 +25,6 @@ module.exports = {
     }
   ],
   templates: {
-    StrapiPost: [{
-      path: '/post/:id',
-      component: './src/templates/Post.vue'
-    }],
-    StrapiTag: [{
-      path: '/tag/:id',
-      component: './src/templates/Tag.vue'
-    }],
     StrapiJournal: [{
       path: '/journal/:id',
       component: './src/templates/JournalPost.vue'
