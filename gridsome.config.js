@@ -11,7 +11,7 @@ module.exports = {
     {
       use: '@gridsome/source-strapi',
       options: {
-        apiURL: 'http://106.75.108.252:1337',
+        apiURL: 'https://xiaaoxue.xyz',
         queryLimit: 1000, // Defaults to 100
         contentTypes: ['project', 'journal'],
         singleTypes: ['theme'],
